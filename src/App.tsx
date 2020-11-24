@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
       app
-      <Button btnType={ButtonType.Danger} size={ButtonSize.Small} >按钮</Button>
+      <Button className="custom" autoFocus onClick={(e)=>{e.preventDefault(); alert('123')}} btnType={ButtonType.Danger} size={ButtonSize.Small} >按钮</Button>
       <Button disabled >按钮</Button>
       <Button btnType={ButtonType.Primary}  size={ButtonSize.Large}>按钮</Button>
-      <Button btnType={ButtonType.Link} href="http://126.com" >Link</Button>
+      <Button btnType={ButtonType.Link} href="http://126.com" target="_blank" >Link</Button>
       <Button btnType={ButtonType.Link} href="http://126.com" disabled>Link</Button>
       <h1>Hello World</h1>
       <h2>Hello World</h2>
